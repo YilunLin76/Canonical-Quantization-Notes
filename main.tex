@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{physics}
+\usepackage{braket}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{sectsty}
+\usepackage{titling}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\geometry{a4paper,  margin=1in}
+\setstretch{1.5}
+\numberwithin{equation}{section}
+\AtBeginDocument{\Large \selectfont}
+\title{Canonical Quantization Notes}
+\author{YILUN LIN}
+\date{October 2025}
+
+\begin{document}
+
+\maketitle
+\Large\textbf{Principle}
+\newline
+\Large{The central idea of canonical quantization is to construct a noncommutative operator algebra that deforms the classical algebra of observables.}
+\section{Procedure of Canonical Quantization}
+\begin{enumerate}
+    \item Specify the dynamics of the classical system.
+    \begin{enumerate}
+        \item Construct the Lagrangian (density) $\mathcal{L}\left[\phi_{\nu}\left(\mathbf{x}\right),\,\partial_{\mu}\phi_{\nu}\left(\mathbf{x}\right)\right]$ of the classical field.
+        \item The Lagrangian must include a kinetic term and a potential term. 
+        \item The kinetic term describes the motion and propagation of the field. It must explicitly depend on the field's derivatives, ensuring that the field has proper propagating degrees of freedom. Crucially, the kinetic term must be a Lorentz scalar, which means that the structure must stay the same under Lorentz transformation. Actually, every term in the Lagrangian must be a Lorentz scalar. 
+        \item The potential term is also known as the interaction term. It determines masses and interactions. The potential term must not include derivatives.
+        \item For example, the Lagrangian of the simplest field \--\-- Klein-Gorden Field ($spin=0$ particle field) \--\-- is $\mathcal{L}\,=\,\frac{1}{2}\partial_{\mu}\phi\,\partial^{\mu}\phi-\frac{1}{2}m^{2}\phi^{2}$.
+        \newline Apply the Euler-Lagrangian equation:
+        \begin{equation}
+            \begin{split}
+                &\frac{\partial\mathcal{L}}{\partial\phi}\,-\,\partial_{\mu}\left[\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\phi\right)}\right]\,=\,0 \\
+                \longrightarrow&\left(\Box+m^{2}\right)\phi\,=\,0.
+            \end{split}
+        \end{equation}
+    \end{enumerate}
+    \item Determine the conjugate momenta and calculate the Hamiltonian.
+\end{enumerate}
+
+
+
+
+
+\end{document}
