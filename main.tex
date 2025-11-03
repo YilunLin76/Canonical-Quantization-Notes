@@ -33,8 +33,8 @@
         \item The kinetic term describes the motion and propagation of the field. It must explicitly depend on the field's derivatives, ensuring that the field has proper propagating degrees of freedom. Crucially, the kinetic term must be a Lorentz scalar, which means that the structure must stay the same under Lorentz transformation. Actually, every term in the Lagrangian must be a Lorentz scalar. 
         \item The potential term is composed of a mass term and a self-interaction term. The potential term must not include derivatives. The quadratic term in the fields is the mass term, and the terms that are cubic or higher order in the fields describe self-interaction. Also, each term should be a Lorentz scalar. 
         \item The global symmetry of the theory should be considered while constructing the Lagrangean. For example, because quantum electrodynamics possesses $U\left(1\right)$ invariance, the Lagrangean of it must be invariant under $U\left(1\right)$ global transformation, or even introduce the corresponding gauge field $A_{\mu}$ to achieve $U\left(1\right)$ gauge symmetry if needed. This is because that the gauge symmetry is optional in classical field theory, but it is required in quantum field theory. 
-        \item For example, the Lagrangian of the simplest field \--\-- Klein-Gorden Field ($spin=0$ particle field) \--\-- is $\mathcal{L}\,=\,\frac{1}{2}\partial_{\mu}\phi\,\partial^{\mu}\phi-\frac{1}{2}m^{2}\phi^{2}$.
-        \newline Apply the Euler-Lagrangian equation:
+        \item For example, the Lagrangean of the simplest field \--\-- Klein-Gorden Field ($spin=0$ particle field) \--\-- is $\mathcal{L}\,=\,\frac{1}{2}\partial_{\mu}\phi\,\partial^{\mu}\phi-\frac{1}{2}m^{2}\phi^{2}$.
+        \newline Apply the Euler-Lagrangean equation:
         \begin{equation}
             \begin{split}
                 &\frac{\partial\mathcal{L}}{\partial\phi}\,-\,\partial_{\mu}\left[\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\phi\right)}\right]\,=\,0 \\
@@ -43,6 +43,21 @@
         \end{equation}
     \end{enumerate}
     \item Determine the conjugate momenta and calculate the Hamiltonian.
+    \begin{enumerate}
+        \item The canonical momentum is defined as 
+        \begin{equation}\label{eq: definition of canonical momentum}
+            \begin{split}
+               \mathcal{\pi}_{\mu}\left[\phi_{\nu}\left(\mathbf{x}\right),\,\partial_{\alpha}\phi_{\nu}\left(\mathbf{x}\right)\right]\,&=\,\frac{\partial\mathcal{L}}{\partial\left[\partial_{0}\phi_{\mu}\left(\mathbf{x}\right)\right]}.
+            \end{split}
+        \end{equation}
+        \item Derive the Hamiltonian of the classical field through Legendre transformation, that is,
+        \begin{equation}
+            \begin{split}
+                \mathcal{H}\left[\phi_{\nu}\left(\mathbf{x}\right),\,\partial_{\alpha}\phi_{\nu}\left(\mathbf{x}\right)\right]\,&=\,\mathcal{\pi}_{\mu}\left[\phi_{\nu}\left(\mathbf{x}\right),\,\partial_{\alpha}\phi_{\nu}\left(\mathbf{x}\right)\right]\partial_{0}\phi^{\mu}\left(\mathbf{x}\right)\,-\,\mathcal{L}\left[\phi_{\nu}\left(\mathbf{x}\right),\,\partial_{\alpha}\phi_{\nu}\left(\mathbf{x}\right)\right].
+            \end{split}
+        \end{equation}
+        \item But now the explicit parameters of $\mathcal{H}$ are fields and their (both time and spatial) derivatives. In order to undergo canonical quantization, the explicit parameters of $\mathcal{H}$ must be $\left[\phi_{\nu},\,\pi_{\nu},\,\nabla\phi_{\nu}\right]$. That is, time derivatives of the field should be replaced with corresponding canonical momenta. From \eqref{eq: definition of canonical momentum}, we can obtain the relations $\partial_{0}\phi_{\nu}=\dot{\phi}_{\nu}\left[\phi_{\mu},\,\mathcal{\pi}_{\mu},\,\nabla\phi_{\mu}\right]$, with the time derivatives $ $
+    \end{enumerate}
 \end{enumerate}
 
 
