@@ -84,18 +84,25 @@
     \newline In canonical quantization, the classical fields and their conjugate momenta are promoted to operators acting on a Hilbert space:
     \begin{equation}
         \begin{split}
-            \phi^{\mu}\left(\mathbf{x}\right)\,&\rightarrow\,\hat{\phi}^{\mu}\left(\mathbf{x}\right),  \\
-            \mathcal{\pi}_{\mu}\left(\mathbf{x}\right)\,&\rightarrow\,\hat{\mathcal{\pi}}_{\mu}\left(\mathbf{x}\right).
+            \phi^{\mu}\left(t,\mathbf{x}\right)\,&\rightarrow\,\hat{\phi}^{\mu}\left(t,\mathbf{x}\right),  \\
+            \mathcal{\pi}_{\mu}\left(t,\mathbf{x}\right)\,&\rightarrow\,\hat{\mathcal{\pi}}_{\mu}\left(t,\mathbf{x}\right).
         \end{split}
     \end{equation}
     These operators are taken to be Hermitian for real scalar fields:
     \begin{equation}
         \begin{split}
-            \hat{\phi}^{\dagger}\left(\mathbf{x}\right)\,=\,\hat{\phi}\left(\mathbf{x}\right),\;\hat{\mathcal{\pi}}^{\dagger}\left(\mathbf{x}\right)\,=\,\hat{\pi}\left(\mathbf{x}\right).
+            \hat{\phi}^{\dagger}\left(t,\mathbf{x}\right)\,=\,\hat{\phi}\left(t,\mathbf{x}\right),\;\hat{\mathcal{\pi}}^{\dagger}\left(t,\mathbf{x}\right)\,=\,\hat{\pi}\left(t,\mathbf{x}\right).
         \end{split}
     \end{equation}
     They act on a Hilbert space $\mathcal{H}$ whose basis states represent quantum many-particle states. 
     \item Equal-Time Commutation Relations
+    \newline The key quantum postulate in canonical quantization is the imposition of equal-time commutation relations between the field operator and the canonical momentum operator, which is 
+    \begin{equation}
+        \begin{split}
+            \comm{\hat{\phi}^{\mu}\left(t,\mathbf{x}\right)}{\hat{\mathcal{\pi}}_{\mu}\left(t,\mathbf{y}\right)}\,&=\,i\hbar\delta^{3}\left(\mathbf{x}-\mathbf{y}\right).
+        \end{split}
+    \end{equation}
+    And all other equal-time 
 \end{enumerate}
 
 
